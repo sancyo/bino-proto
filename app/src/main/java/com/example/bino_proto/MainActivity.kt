@@ -19,12 +19,15 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         // ナビゲーショングラフのIDを指定
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.navigation_home, R.id.navigation_statistics, R.id.navigation_note))
+        //val appBarConfiguration = AppBarConfiguration(setOf(R.id.navigation_home, R.id.navigation_statistics, R.id.navigation_note))
 
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        // setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
+    // val localdb = UserArticleDatabase.getInstance(this)
 }
+
 
 // var => 再代入可能な変数
 // val => 再代入不可な変数
