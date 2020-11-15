@@ -77,4 +77,11 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     androidTestImplementation "androidx.test.ext:junit:$rootProject.androidxJunitVersion"
+
+    // card view
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    // recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
 }
